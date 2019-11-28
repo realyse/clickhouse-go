@@ -10,7 +10,7 @@ import (
 	bklz4 "github.com/bkaradzic/go-lz4"
 	cflz4 "github.com/cloudflare/golz4"
 	pilz4 "github.com/pierrec/lz4"
-	ownlz4 "github.com/realyse/clickhouse-/lz4"
+	ownlz4 "github.com/realyse/clickhouse-go/lz4"
 )
 
 func Test_CompressCorrect(t *testing.T) {

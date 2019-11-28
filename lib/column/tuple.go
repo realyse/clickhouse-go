@@ -18,6 +18,10 @@ func (tuple *Tuple) Read(decoder *binary.Decoder) (interface{}, error) {
 	return nil, fmt.Errorf("do not use Read method for Tuple(T) column")
 }
 
+func (tuple *Tuple) Write(encoder *binary.Encoder, v interface{}) (err error) {
+	return fmt.Errorf("unsupported Tuple(T) type [%T]", v)
+}
+
 func (tuple *Tuple) ReadTuple(decoder *binary.Decoder, rows int) (_ []interface{}, err error) {
 	var values = make([][]interface{}, rows)
 
@@ -68,10 +72,6 @@ func (tuple *Tuple) ReadTuple(decoder *binary.Decoder, rows int) (_ []interface{
 	}
 
 	return ret, nil
-}
-
-func (tuple *Tuple) Write(encoder *binary.Encoder, v interface{}) (err error) {
-	return fmt.Errorf("unsupported Tuple(T) type [%T]", v)
 }
 
 func parseTuple(name, chType string, timezone *time.Location) (*Tuple, error) {
