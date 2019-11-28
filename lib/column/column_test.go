@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ClickHouse/clickhouse-go/lib/binary"
-	columns "github.com/ClickHouse/clickhouse-go/lib/column"
+	"github.com/realyse/clickhouse-go/lib/binary"
+	columns "github.com/realyse/clickhouse-go/lib/column"
 	"github.com/stretchr/testify/assert"
 )
 

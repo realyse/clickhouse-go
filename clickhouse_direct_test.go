@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ClickHouse/clickhouse-go"
-	"github.com/ClickHouse/clickhouse-go/lib/column"
-	"github.com/ClickHouse/clickhouse-go/lib/types"
+	"github.com/realyse/clickhouse-go"
+	"github.com/realyse/clickhouse-go/lib/column"
+	"github.com/realyse/clickhouse-go/lib/types"
 	"github.com/stretchr/testify/assert"
 )
 

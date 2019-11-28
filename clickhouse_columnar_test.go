@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ClickHouse/clickhouse-go"
-	"github.com/ClickHouse/clickhouse-go/lib/data"
+	"github.com/realyse/clickhouse-go"
+	"github.com/realyse/clickhouse-go/lib/data"
 	"github.com/stretchr/testify/assert"
 )
 

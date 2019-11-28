@@ -2,10 +2,11 @@ package column
 
 import (
 	"fmt"
-	"github.com/kshvakov/clickhouse/lib/binary"
 	"reflect"
 	"strconv"
 	"time"
+
+	"github.com/realyse/clickhouse-go/lib/binary"
 )
 
 type Tuple struct {

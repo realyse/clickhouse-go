@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/ClickHouse/clickhouse-go/lib/binary"
+	"github.com/realyse/clickhouse-go/lib/binary"
 )
 
 func (block *Block) WriteDate(c int, v time.Time) error {
